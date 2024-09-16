@@ -1,0 +1,35 @@
+<div class="relative">
+    <div class="carousel-container overflow-x-hidden">
+        <div class="carousel" [style.transform]="'translateX(-'+ 
+        (currentSlide*100)+'%)'">
+
+        <ng-container class="" 
+        *ngFor= "let item of carouselData; let i=index">
+        
+   <a class="carousel-item">
+        <img [src]="item.image" alt="carousel image" class="carousel-image">
+    </a>
+    </ng-container>
+
+        </div>
+
+    </div>
+</div>
+<!-- 
+<div class="relative">
+    <div class="carousel-container overflow-x-hidden">
+        <div class="carousel" [style.transform]="'translateX(-'+ (currentSlide*100)+'%)'">
+
+            <ng-container class="">
+            Replaced ng-container with div as ng-container can't have classes -->
+            <!-- <div *ngFor="let item of carouselData; let i=index" >
+                <a [routerLink]="item.path" class="carousel-item">
+                    <img [src]="item.image" alt="carousel image" class="carousel-item img">
+                </a>
+            </div>
+        </ng-container>
+
+        </div>
+    </div>
+</div> -->
+
